@@ -426,19 +426,6 @@ function merge(arr1, arr2) {
     return res;
 }
 
-function mergeSort(arr) {
-    if (arr.length < 2) {
-        return arr;
-    }
-    if (arr.length === 2) {
-        return arr[0] < arr[1] ? [arr[0], arr[1]] : [arr[1], arr[0]];
-    }
-    let arr_center = Math.floor(arr.length / 2);
-    let res = merge(mergeSort(arr.slice(0, arr_center)), mergeSort(arr.slice(arr_center)));
-    console.log(res);
-    return res;
-}
-
 // каррирование функции
 function curry(func) {
     return function curried(...args) {
