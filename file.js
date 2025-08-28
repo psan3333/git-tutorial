@@ -1,5 +1,6 @@
-const num = 10;
+function hello() {
+    console.log("Hello was executed");
+    return 10;
+}
 
-console.log(num + 15);
-
-console.log("Hello, World!");
+hello();
